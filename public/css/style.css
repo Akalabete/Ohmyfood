@@ -1,0 +1,72 @@
+.header {
+  background: #15DEA5;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.header__logo {
+  font-size: 7rem;
+  color: #001534;
+  margin-left: 10rem;
+  text-shadow: 0.55rem 0.55rem #fff;
+}
+
+.about {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: repeat(3, auto);
+  padding: 1.5rem;
+  grid-template-areas: "imagery heading" "imagery copy" "imagery btn";
+  margin-bottom: 1.5rem;
+}
+.about__heading {
+  grid-area: heading;
+  color: #fff;
+  text-shadow: 0.55rem 0.55rem lightness-shift(#15DEA5);
+  text-align: right;
+  padding-right: 1.5rem;
+}
+.about__imagery {
+  grid-area: imagery;
+}
+.about__pic {
+  overflow: hidden;
+  width: 80%;
+  border-radius: 1000rem;
+  border: 1.5rem solid #15DEA5;
+}
+.about__pic img {
+  display: block;
+  width: 100%;
+}
+.about__copy {
+  grid-area: copy;
+}
+.about__copy p {
+  line-height: 2.4rem;
+  margin-bottom: 3.375rem;
+}
+.about__btn {
+  padding: 1.5rem;
+  border: 0.1rem solid #15DEA5;
+  color: #15DEA5;
+  background: #001534;
+  cursor: pointer;
+  grid-area: btn;
+}
+.about__btn:hover {
+  background: #15DEA5;
+  color: #D6FFF5;
+}
+.about__btn--full-width {
+  width: 100%;
+  margin: 0 auto;
+}
+.about__btn a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
