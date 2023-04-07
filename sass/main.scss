@@ -7,13 +7,16 @@
 @import "./base/typography";
 
 @import "./components/buttons";
+@import "./components/fontawsomes";
+
 
 @import "./layout/header";
-@import "./layout/nav";
-@import "./layout/container";
+@import "./layout/menuslayout";
+@import "./layout/mainlayout";
 @import "./layout/form";
+@import "./layout/footer";
 
 
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
+
+
+@import "./pages/menus";

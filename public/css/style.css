@@ -1,72 +1,157 @@
-.header {
-  background: #15DEA5;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.header__logo {
-  font-size: 7rem;
-  color: #001534;
-  margin-left: 10rem;
-  text-shadow: 0.55rem 0.55rem #fff;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-.about {
+body {
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h2 {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 41px;
+  color: black;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.pnk-button {
+  margin: 20px 0;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.pnk-button__main {
+  width: 218px;
+}
+.pnk-button__menus {
+  width: 186px;
+}
+.pnk-button:hover {
+  background: linear-gradient(#ffc6ef, #bc95e9);
+}
+
+.fa-location-dot {
+  padding-right: 10px;
+}
+
+.menu__header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+.menu__header__container__backto {
+  position: absolute;
+  left: 0;
+  font-size: 24px;
+  transform: translateX(50%);
+  padding-left: 1%;
+}
+.menu__header__container__logo {
+  max-width: 200px;
+  width: 50%;
+  max-height: 44px;
+}
+.menu__header__container__logo img {
   width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
-  grid-template-rows: repeat(3, auto);
-  padding: 1.5rem;
-  grid-template-areas: "imagery heading" "imagery copy" "imagery btn";
-  margin-bottom: 1.5rem;
+  max-height: 44px;
+  height: 50%;
 }
-.about__heading {
-  grid-area: heading;
-  color: #fff;
-  text-shadow: 0.55rem 0.55rem lightness-shift(#15DEA5);
-  text-align: right;
-  padding-right: 1.5rem;
+
+.menu__selection {
+  padding-top: 45%;
 }
-.about__imagery {
-  grid-area: imagery;
+.menu__selection__entries {
+  background: #F6F6F6;
+  border-radius: 40px 40px 0 0;
 }
-.about__pic {
-  overflow: hidden;
-  width: 80%;
-  border-radius: 1000rem;
-  border: 1.5rem solid #15DEA5;
-}
-.about__pic img {
+
+.main-hooker {
   display: block;
+  text-align: center;
+}
+.main-hooker__localisation {
+  background-color: #EAEAEA;
+  border-top: solid 2px #c4c4c4;
+  height: 50px;
+  line-height: 50px;
+}
+
+[class$=footer] {
+  background-color: #353535;
+  color: #ffffff;
+}
+
+[class^=menu__photo] {
   width: 100%;
+  background-color: #F6F6F6;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.about__copy {
-  grid-area: copy;
+
+[class$=__alafrancaise] {
+  background-image: url("../../public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
-.about__copy p {
-  line-height: 2.4rem;
-  margin-bottom: 3.375rem;
+
+[class$=__lanoteenchantee] {
+  background-image: url("../../public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
-.about__btn {
-  padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
-  background: #001534;
-  cursor: pointer;
-  grid-area: btn;
+
+[class$=__lapalettedesgouts] {
+  background-image: url("../../public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
-.about__btn:hover {
-  background: #15DEA5;
-  color: #D6FFF5;
-}
-.about__btn--full-width {
-  width: 100%;
-  margin: 0 auto;
-}
-.about__btn a {
-  text-decoration: none;
+
+[class$=__ledelicedessens] {
+  background-image: url("../../public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */

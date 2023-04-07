@@ -1,0 +1,15 @@
+.pnk-button {
+    margin: 20px 0;
+    height: 50px;
+    border-radius: 25px;
+    &__main {
+        width: 218px;
+    }
+    &__menus {
+        width: 186px;
+    }
+    @include button-gradient($color-btn-pink-sec, $color-btn-pink-main);
+    &:hover {
+        @include ligthenedgradient($color-btn-pink-sec, $color-btn-pink-main);
+    }
+}

@@ -1,14 +1,24 @@
-.header {
-    background: $colour-primary;
-    height: 10rem;
-    display: flex;
+.menu__header__container{
+    display: flex;    
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;   
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    &__backto{ 
+        position: absolute;
+        left: 0;
+        font-size: 24px;  
+        transform: translateX(50%);
+        padding-left: 1%;     
+    }
     &__logo {
-        font-size: 7rem;
-        color: $colour-secondary;
-        margin-left: 10rem;
-        @include heading-shadow($colour-white);
+        max-width: 200px;
+        width: 50%;
+        max-height: 44px;
+    }
+    &__logo img{
+        width: 100%;
+        max-height: 44px;
+        height: 50%;
     }
 }

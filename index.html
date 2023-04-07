@@ -4,59 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/15c7396bf2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,
+    100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=
+    Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
     <title>Ohmyfood!</title>
 </head>
-<body>
-    <header>
-        <h1>ohmyfood</h1>
-        <div class="localisation">
-            <p>Paris, Belleville</p>
-        </div>
-        <div class="hooker">
-            <h2>Réservez le menu qui <br>vous convient</h2>
-            <p>Découvrez des restaurants d'exception,<br>
-            séléctionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
-        </div>   
+<body class="main">
+    <header class="menu__header">
+        <div class="menu__header__container">            
+            <div class="menu__header__container__logo">
+                <img src="../../public/img/logo/ohmyfood.png" alt="logo ohmyfood">
+            </div>
+        </div>        
     </header>
     <main>
-        <section class="howto">
-            <h2>Fonctionnement</h2>
-            <div class="howto-bubble">
+        <div class="main-hooker">
+            <div class="main-hooker__localisation">
+                <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
+            </div>
+            <div class="main__header__hooker">
+                <h1>Réservez le menu qui <br>vous convient</h1>
+                <h3>Découvrez des restaurants d'exception,<br>
+                séléctionnés par nos soins.</h3>
+                <button class="pnk-button">Explorer nos restaurants</button>
+            </div>   
+        </div>
+        <section class="root__howto">
+            <h3>Fonctionnement</h3>
+            <div class="root__howto__bubble">
                 <p>Choississez un restaurant</p>
             </div>
-            <div class="howto-bubble">
+            <div class="root__howto__bubble">
                 <p>Composez votre menu</p>
             </div>
-            <div class="howto-bubble">
+            <div class="root__howto__bubble">
                 <p>Dégustez au restaurant</p>
             </div>
         </section>
-        <section class="restaurants">
-            <h2>Restaurants</h2>
-            <div class="restaurant-card">
-                <div class="restaurant-img"></div>
+        <section class="root__restaurants">
+            <h3>Restaurants</h3>
+            <div class="root__restaurant-card">
+                <div class="root__restaurant-card__restaurant-img"></div>
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
             </div>
-            <div class="restaurant-card">
-                <div class="restaurant-img"></div>
+            <div class="root__restaurant-card">
+                <div class="root__restaurant-card__restaurant-img"></div>
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
             </div>
-            <div class="restaurant-card">
-                <div class="restaurant-img"></div>
+            <div class="root__restaurant-card">
+                <div class="root__restaurant-card__restaurant-img"></div>
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
             </div>
-            <div class="restaurant-card">
-                <div class="restaurant-img"></div>
+            <div class="root__restaurant-card">
+                <div class="root__restaurant-card__restaurant-img"></div>
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="root__footer">
         <h3>ohmyfood</h3>
         <ul>
             <li>Proposer un restaurant</li>

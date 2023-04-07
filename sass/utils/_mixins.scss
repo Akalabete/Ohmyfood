@@ -36,3 +36,21 @@
         margin: 0 auto;
     }
 }
+@mixin generic-menu-restaurants {
+    background: $color-primary;
+    border-radius: $border-radius-restaurants;
+}
+// all h* but h2
+@mixin generic-title-style {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: $color-black;
+}
+@mixin button-gradient($color1, $color2) {
+    background: linear-gradient($color1, $color2);
+}
+@mixin ligthenedgradient($color1, $color2) {    
+    $fadedcolor1: lighten($color1, 15%);
+    $fadedcolor2: lighten($color2, 15%);
+    background: linear-gradient($fadedcolor1,$fadedcolor2);
+}
