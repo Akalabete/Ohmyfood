@@ -1,0 +1,8 @@
+
+
+.menu__selection {
+    padding-top: 45%;
+    &__entries{
+        @include generic-menu-restaurants;
+    }   
+}
