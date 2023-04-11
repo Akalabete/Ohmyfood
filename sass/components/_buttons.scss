@@ -1,3 +1,5 @@
+//boutons rose/mauve avec degradé
+
 .pnk-button {
     margin: 20px 0;
     height: 50px;
@@ -14,3 +16,6 @@
         @include ligthenedgradient($color-btn-pink-sec, $color-btn-pink-main);
     }
 }
+
+// boutons de sélection des plats
+
