@@ -2,16 +2,23 @@ body {
     font-family: 'Roboto', sans-serif;
     color: $color-black;
 }
+// annulation des 16px de marge ajoutées par le navigateur de base
 
-
-
+.main p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.main__howto__bubble__text p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
 button {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    align-items: center;
     text-align: center;
 }
 h1 {
@@ -29,16 +36,25 @@ h2 {
     color: $color-black;
 }
 
+.main__hooker__infos p {
+    font-weight: 300;
+    font-size: 18px;
+    @include generic-title-style;
+}
 h3 {
     @include generic-title-style;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
     line-height: 21px;
 }
+
 
 h4 {
     @include generic-title-style;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
+}
+.footer h3 {
+    color: white;
 }

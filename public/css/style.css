@@ -1,19 +1,23 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
 body {
-  box-sizing: border-box;
   background: #ffffff;
+  width: 100%;
+  margin: 0;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: black;
+}
+
+.main p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.main__howto__bubble__text p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 button {
@@ -22,7 +26,6 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  align-items: center;
   text-align: center;
 }
 
@@ -44,11 +47,19 @@ h2 {
   color: black;
 }
 
+.main__hooker__infos p {
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  color: black;
+}
+
 h3 {
   font-family: "Roboto";
   font-style: normal;
   color: black;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
   line-height: 21px;
 }
@@ -62,10 +73,15 @@ h4 {
   line-height: 21px;
 }
 
+.footer h3 {
+  color: white;
+}
+
 .pnk-button {
   margin: 20px 0;
   height: 50px;
   border-radius: 25px;
+  color: #ffffff;
   background: linear-gradient(#FF79DA, #9356DC);
 }
 .pnk-button__main {
@@ -80,6 +96,14 @@ h4 {
 
 .fa-location-dot {
   padding-right: 10px;
+}
+
+.fa-mobile, .fa-list-ul {
+  color: #7E7E7E;
+}
+
+.fa-store {
+  color: #9356DC;
 }
 
 .menu__header__container {
@@ -115,27 +139,51 @@ h4 {
   border-radius: 40px 40px 0 0;
 }
 
-.main-hooker {
-  display: block;
-  text-align: center;
-}
-.main-hooker__localisation {
-  background-color: #EAEAEA;
-  border-top: solid 2px #c4c4c4;
-  height: 50px;
-  line-height: 50px;
-}
-
 [class$=footer] {
   background-color: #353535;
   color: #ffffff;
 }
 
-[class^=menu__photo] {
+.main__restaurants__card h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.main__restaurants__card p, .main__restaurants__card h3 {
+  margin-left: 10px;
+}
+
+.main__restaurants__card p {
+  padding-bottom: 10px;
+}
+
+.main__restaurants {
+  padding: 0 2%;
+  background: #F7F7F7;
+  width: 96%;
+}
+.main__restaurants__card {
+  background: #ffffff;
   width: 100%;
-  background-color: #F6F6F6;
+  margin-bottom: 18px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.main__restaurants__card > [class^=main__restaurants__card__] {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  min-height: 150px;
+  height: 80%;
+  background-color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+[class^=menu__photo] {
+  background-color: #ffffff;
   background-size: contain;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 [class$=__alafrancaise] {
@@ -152,6 +200,54 @@ h4 {
 
 [class$=__ledelicedessens] {
   background-image: url("../../public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.main__hooker {
+  text-align: center;
+  background: #F7F7F7;
+}
+.main__hooker__localisation {
+  width: 100%;
+  height: 100%;
+  background-color: #EAEAEA;
+  border-top: solid 2px #c4c4c4;
+  line-height: 40px;
+}
+
+.main__howto {
+  display: block;
+  padding-left: 10px;
+}
+.main__howto__bubble {
+  position: relative;
+  border: none;
+  background: #F6F6F6;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  height: 72px;
+  width: 92%;
+  margin-left: 5px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.main__howto__bubble__icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  top: 25px;
+  border-radius: 10px;
+  background-color: #9356DC;
+  color: #ffffff;
+  text-align: center;
+}
+.main__howto__bubble__innericon {
+  position: absolute;
+  left: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */

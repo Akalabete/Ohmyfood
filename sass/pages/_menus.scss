@@ -1,10 +1,8 @@
 
 
 [class^="menu__photo"] {
-    width: 100%; 
-    background-color: $color-primary;
-    background-size: contain;
-    background-repeat: no-repeat;
+    @include restaurant-photos;
+    width: 100%;
 }
  
 [class$="__alafrancaise"]{

@@ -1,41 +1,3 @@
-@mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
-    text-shadow: $offset $offset $colour;
-}
-
-@mixin border($colour:$colour-primary) {
-    border: .1rem solid $colour;
-}
-
-@mixin img-ratio {
-    width: 100%;
-        display: block;
-        overflow: hidden;
-        padding-top: 56.25%;
-        position: relative;
-        & img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            transform: translate(-50%, -50%);
-        }
-}
-
-@mixin btn {
-    padding: $grid-gutter;
-    @include border;
-    color: $colour-primary;
-    background: $colour-secondary;
-    cursor: pointer;
-    &:hover{
-        background: $colour-primary;
-        color: $colour-accent;
-    }
-    &--full-width {
-        width: 100%;
-        margin: 0 auto;
-    }
-}
 @mixin generic-menu-restaurants {
     background: $color-primary;
     border-radius: $border-radius-restaurants;
@@ -53,4 +15,22 @@
     $fadedcolor1: lighten($color1, 15%);
     $fadedcolor2: lighten($color2, 15%);
     background: linear-gradient($fadedcolor1,$fadedcolor2);
+}
+@mixin bubblestyle {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; 
+}
+
+@mixin restaurant-photos {
+    background-color: $color-white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@mixin main-restaurant-photos {
+    background-color: $color-white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@mixin boxshadow-restaurants-card{
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
