@@ -41,7 +41,6 @@ h1 {
 h2 {
   font-family: "Shrikhand";
   font-style: italic;
-  font-weight: 900;
   font-size: 28px;
   line-height: 41px;
   color: black;
@@ -71,10 +70,6 @@ h4 {
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-}
-
-.footer h3 {
-  color: white;
 }
 
 .pnk-button {
@@ -132,16 +127,50 @@ h4 {
 }
 
 .menu__selection {
-  padding-top: 45%;
+  padding-top: 150px;
 }
-.menu__selection__entries {
-  background: #F6F6F6;
+.menu__selection > * {
+  background: #F7F7F7;
   border-radius: 40px 40px 0 0;
 }
 
-[class$=footer] {
+.menu__title {
+  margin: 0px 0 24px 15px;
+  padding-top: 25px;
+}
+
+.menu__selection__title {
+  margin: 18px 0 18px 15px;
+}
+
+.menu__selection__plate {
+  margin: 12px 15px 12px 15px;
+  width: 100%;
+  height: 70px;
+}
+
+/*
+.menu__selection__plate h4 {
+
+
+}*/
+.footer {
   background-color: #353535;
   color: #ffffff;
+}
+.footer__list {
+  list-style-type: none;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+.footer__list__icons {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.footer__title {
+  color: white;
+  padding: 10px 0 0 40px;
 }
 
 .main__restaurants__card h3 {
@@ -216,7 +245,7 @@ h4 {
 
 .main__howto {
   display: block;
-  padding-left: 10px;
+  padding: 0 2%;
 }
 .main__howto__bubble {
   position: relative;
@@ -225,14 +254,13 @@ h4 {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   height: 72px;
-  width: 92%;
-  margin-left: 5px;
+  width: 90%;
+  margin: 0 0 25px 10px;
   padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
 }
 .main__howto__bubble__icon {
   width: 20px;

@@ -1,4 +1,18 @@
-[class$="footer"]{
+.footer {
     background-color: $color-footer;
     color: $color-white;
+    &__list {
+        list-style-type: none;
+        line-height: 24px;
+        padding-bottom: 20px;
+        &__icons {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+    }
+    &__title {
+        color: white;
+        padding: 10px 0 0 40px;
+    }
 }

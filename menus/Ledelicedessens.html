@@ -4,67 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/15c7396bf2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,
+    100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=
+    Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/style.css">
-    <title>Menu - Le délice des sens</title>
+    <title>Menu - À la française</title>
 </head>
-<body>
+<body class="menu">
     <header class="menu__header">
-        <img src="#" alt="table garnie à La palette du goût">
+        <div class="menu__header__container">
+            <div class="menu__header__container__backto">
+                <a href="../../../index.html" class="backto">
+                    <i class="fa-solid fa-arrow-left"alt="flèche indiquant un retour à la page d'accueil"></i>
+                </a> 
+            </div>
+            <div class="menu__header__container__logo">
+                <img src="../../public/img/logo/ohmyfood.png" alt="logo ohmyfood">
+            </div>
+        </div>        
     </header>
-    <main>
-        <h2 class="menu__title">Le délice des sens</h2>
-        <section class="menu__entries">
-            <div class="menu__entries__plate">
-                <h3>Tartare de thon</h3>
-                <p>Assaisonné au yuzu<span>25€</span></p>
+    <main class="menu__photo__alafrancaise"> 
+        <section class="menu__selection">
+            <div class="menu__selection__entries">
+                <h2 class="menu__title">À la française</h2>
+                <form   action="submit"
+                        class="menu__selection__form"
+                        >
+                <h3 class="menu__selection__title">entrées</h3>
+                <button class="menu__selection__plate">
+                    <h4>Tartare de poulpe acidulé</h4>
+                    <p>Aux zestes d'orange<span>25€</span></p>
+                    <img src="#" alt="validation image">
+                </button>
+                <button class="menu__selection__plate">
+                    <h4>Velouté de légumes d'antan</h4>
+                    <p>Carotte, panais, topinambour<span>35€</span></p>
+                    <img src="#" alt="validation image">
+                </button>
+                <button class="menu__selection__plate">
+                    <h4>Soupe à l'oignon</h4>
+                    <p>Revisitée<span>20€</span></p>
+                    <img src="#" alt="validation image">
+                </button>
             </div>
-            <div class="menu__entries__plate">
-                <h3>Bouchée de hommard croustillant</h3>
-                <p>Et sa farandole de légumes<span>35€</span></p>
+                
+            <div class="menu__selection__main-courses">
+                <h3>plats</h3>
+                <button class="menu__selection__plate">
+                    <h4>Coquilles Saint-Jacques</h4>
+                    <p>Accompagnées d'une purée de panais<span>40€</span></p>
+                    <img src="#" alt="validation image">
+                </button>
+                <button class="menu__selection__plate">
+                    <h4>Magret de canard</h4>
+                    <p>Et parmentier de pommes de terre<span>35€</span></p>
+                    <img src="#" alt="validation image">
+                </button>
+                <button class="menu__selection__plate">
+                    <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+                    <p>Sur son lit de gnoccis aux légumes<span>44€</span></p>
+                    <img src="#" alt="validation image">
+                </button>
             </div>
-            <div class="menu__entries__plate">
-                <h3>Poulet rôti aux herbes de Provence</h3>
-                <p>Et sa crème de truffe<span>40€</span></p>
-            </div>
-        </section>
-        <section class="menu__main-courses">
-            <div class="menu__main-course__plate">
-                <h3>Poulet rôti aux herbes de Provence</h3>
-                <p>Et sa crème de truffe<span>40€</span></p>
-            </div>
-            <div class="menu__main-course__plate">
-                <h3>Langouste rôtie</h3>
-                <p>Et ses légumes de saison<span>35€</span></p>
-            </div>
-            <div class="menu__main-course__plate">
-                <h3>Côte de bœuf Angus</h3>
-                <p>Et sa purée de panais<span>44€</span></p>
-            </div>
-        </section>
-        <section class="menu__desserts">
-            <div class="menu__desserts__plate">
-                <h3>Farandole de desserts</h3>
-                <p>Du chef<span>18€</span></p>
-            </div>
-            <div class="menu__desserts__plate">
-                <h3>Crème brulée</h3>
-                <p>Revisitée<span>22€</span></p>
-            </div>
-            <div class="menu__desserts__plate">
-                <h3>Tiramisu</h3>
-                <p>À la noisette<span>23€</span></p>
-            </div>
+            <div class="menu__selection__desserts">
+                <h3 class="menu__desserts__title">desserts</h3>
+                <button class="menu__desserts__plate">
+                    <h4>Pétales de violettes glacés</h4>
+                    <p>Et purée de noisettes<span>18€</span></p>
+                    <img src="#" alt="validation image">
+                </button>
+                <button class="menu__desserts__plate">
+                    <h4>Fondant au chocolat</h4>
+                    <p>Revisité<span>22€</span></p>
+                    <img src="#" alt="validation image">
+                </button>
+                <button class="menu__desserts__plate">
+                    <h4>Millefeuille croustillant</h4>
+                    <p>Myrtilles et pâte d'amande<span>23€</span></p>
+                    <img src="#" alt="validation image">
+                </button>
+            </div>            
+            <button 
+                class="pnk-button"
+                type="submit"
+                >Commander</button>
+            </form>
         </section>
     </main>
-    <footer class="menu__footer">
-        <h3>ohmyfood</h3>
-        <ul>
-            <li>Proposer un restaurant</li>
-            <li>Devenir partenaire</li>
+    <footer class="footer">
+        <h3 class="footer__title">ohmyfood</h3>
+        <ul class="footer__list">
+            <li><i class="footer__list__icons fa-solid fa-utensils fa-sm"></i>Proposer un restaurant</li>
+            <li><i class="footer__list__icons fa-solid fa-handshake-angle fa-sm">Devenir partenaire</li>
             <li>Mentions légales</li>
             <li>Contact</li>
         </ul>
     </footer>
-        
+    
 </body>
 </html>
