@@ -19,7 +19,7 @@
      &__bubble {
          position: relative;
          border: none;
-         background: $color-primary;
+         background: $color-white;
          @include bubblestyle;
          height: 72px;
          width: 90%;
@@ -36,7 +36,7 @@
              left: -10px;
              top: 25px;               
              border-radius: 10px;
-             background-color: $color-btn-pink-main;
+             background-color: $color-primary;
              color: $color-white;
              text-align: center;
          }

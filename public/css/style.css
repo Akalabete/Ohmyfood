@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: #ffffff;
   width: 100%;
@@ -67,28 +68,36 @@ h4 {
   font-family: "Roboto";
   font-style: normal;
   color: black;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 18px;
   line-height: 21px;
 }
 
 .pnk-button {
-  margin: 20px 0;
-  height: 50px;
-  border-radius: 25px;
-  color: #ffffff;
-  background: linear-gradient(#FF79DA, #9356DC);
-}
-.pnk-button__main {
-  width: 218px;
-}
-.pnk-button__menus {
-  width: 186px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  padding: 17px 43px;
+  border-radius: 60px;
+  border: none;
+  display: block;
+  margin: 40px auto;
+  font-size: 1.1rem;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 .pnk-button:hover {
-  background: linear-gradient(#ffc6ef, #bc95e9);
+  background: linear-gradient(to right bottom, #ff93e1, #a16be0);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.45);
 }
 
+@keyframes colorChange {
+  0% {
+    background: linear-gradient(#FF79DA, #9356DC);
+  }
+  100% {
+    background: linear-gradient(#ffc6ef, #bc95e9);
+  }
+}
 .fa-location-dot {
   padding-right: 10px;
 }
@@ -99,6 +108,39 @@ h4 {
 
 .fa-store {
   color: #9356DC;
+}
+
+.fa-circle-check {
+  background-color: #99E2D0;
+  color: #ffffff;
+}
+
+@keyframes plate-appear-order {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animation-card {
+  animation-name: plate-appear-order;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+}
+
+.animation-entree {
+  animation-delay: 1s;
+}
+
+.animation-plat {
+  animation-delay: 2s;
+}
+
+.animation-dessert {
+  animation-delay: 3s;
 }
 
 .menu__header__container {
@@ -135,25 +177,73 @@ h4 {
 }
 
 .menu__title {
-  margin: 0px 0 24px 15px;
+  margin: 0 0 24px 15px;
   padding-top: 25px;
 }
 
 .menu__selection__title {
-  margin: 18px 0 18px 15px;
+  margin: 18px 0 18px 5px;
 }
 
-.menu__selection__plate {
-  margin: 12px 15px 12px 15px;
-  width: 100%;
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.card .btn-check {
+  border: 0;
+  position: absolute;
+  top: 0px;
+  right: -100px;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 65px;
+  border-radius: 0 20px 20px 0;
+  transition-duration: 0.55s;
+}
+.card .btn-check .fa-circle-check {
+  color: white;
+  transition-duration: 0.6s;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover .btn-check {
+  right: 0;
+}
+.card:hover strong {
+  margin-right: 60px;
+}
+
+.card {
+  background-color: #ffffff;
   height: 70px;
+  margin: 15px 15px 0 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.card .card-title {
+  margin-left: 15px;
+  margin-top: -8px;
+}
+.card .card-body {
+  display: flex;
+  justify-content: space-between;
+  margin: -29px 20px 0 15px;
+}
+.card .card-body .para-body {
+  width: 89%;
+  overflow: hidden;
+  text-overflow: ellipsis; /* apparition des ... en cas de menu trop long*/
+  white-space: nowrap; /* empeche le retour à la ligne */
+}
+.card .card-body strong {
+  transition-duration: 0.6s;
 }
 
-/*
-.menu__selection__plate h4 {
+.menu__selection__container {
+  padding-bottom: 1px;
+}
 
-
-}*/
 .footer {
   background-color: #353535;
   color: #ffffff;
@@ -250,7 +340,7 @@ h4 {
 .main__howto__bubble {
   position: relative;
   border: none;
-  background: #F6F6F6;
+  background: #ffffff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   height: 72px;

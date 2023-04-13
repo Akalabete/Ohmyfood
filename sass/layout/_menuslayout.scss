@@ -8,22 +8,79 @@
     }   
 }
 .menu__title {
-    margin: 0px 0 24px 15px;
+    margin: 0 0 24px 15px;
     padding-top: 25px;
 }
 
 .menu__selection__title {
-    margin: 18px 0 18px 15px;
+    margin: 18px 0 18px 5px;
 }
 
-.menu__selection__plate {
-    margin: 12px 15px 12px 15px; 
-    width: 100%;
-    height: 70px;
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+
+    .btn-check{
+        border: 0;
+        position: absolute;
+        top: 0px;
+        right: -100px;
+        background-color: $color-tertiary;
+        height: 100%;
+        width: 65px;
+        border-radius: 0 20px 20px 0;
+        transition-duration: .55s;
+
+        .fa-circle-check
+        {
+            color: white;        
+            transition-duration: .60s;
+        }
+    }
+
+    &:hover{
+        cursor: pointer;
+
+        .btn-check {
+            right: 0;        
+        }
+        strong {
+            margin-right: 60px;
+        }
+    }
 }
 
-/*
-.menu__selection__plate h4 {
+
+
+.card
+{
+    @include card;
+
+    .card-title
+    {
+        
+        margin-left: 15px;
+        margin-top: -8px; 
+    }
+
+    .card-body {
+        display: flex;
+        justify-content: space-between;
+        margin: -29px 20px 0 15px;
+         .para-body {
+            width: 89%;
+            overflow: hidden;
+            text-overflow: ellipsis;/* apparition des ... en cas de menu trop long*/
+            white-space: nowrap; /* empeche le retour à la ligne */            
+        }
+        strong {
+            transition-duration: 0.60s;
+        }
     
-
-}*/
+    }
+}
+.menu__selection__container {
+    padding-bottom: 1px; // sinon bouton collé en bas ??
+}

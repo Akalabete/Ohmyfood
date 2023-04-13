@@ -1,21 +1,31 @@
 //boutons rose/mauve avec degradé
 
 .pnk-button {
-    margin: 20px 0;
-    height: 50px;
-    border-radius: 25px;
-    color: $color-white;
-    &__main {
-        width: 218px;
-    }
-    &__menus {
-        width: 186px;
-    }
-    @include button-gradient($color-btn-pink-sec, $color-btn-pink-main);
+    
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    color: white;
+    padding: 17px 43px;
+    border-radius: 60px;
+    border: none;
+    display: block;
+    margin: 40px auto;
+    font-size: 1.1rem;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    cursor: pointer;
+    
     &:hover {
-        @include ligthenedgradient($color-btn-pink-sec, $color-btn-pink-main);
+        background: linear-gradient(to right bottom, lighten($color-secondary, 5), lighten($color-primary, 5));
+        box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 45%);
     }
 }
 
 // boutons de sélection des plats
 
+@keyframes colorChange {
+    0% {
+        background: linear-gradient($color-secondary, $color-primary);
+    }
+    100% {
+        background: linear-gradient(lighten($color-secondary, 15%), lighten($color-primary, 15%));    
+    }
+}
