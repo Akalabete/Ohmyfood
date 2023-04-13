@@ -1,4 +1,4 @@
-// les entrées plats et desserts :
+// base anim for plate fx
 
 @keyframes plate-appear-order {
   from {
@@ -10,20 +10,25 @@
     transform: translateX(0);
   }
 }
-.animation-card {
+
+// delaying appearance
+
+
+[class^="animation__card"] {
   animation-name: plate-appear-order;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
 }
 
-.animation-entree {
+[class$="card__entries"] {
   animation-delay: 1s;
 }
 
-.animation-plat {
+[class$="card__main-courses"] {
   animation-delay: 2s;
 }
 
-.animation-dessert {
+[class$="card__desserts"] {
   animation-delay: 3s;
 }
+

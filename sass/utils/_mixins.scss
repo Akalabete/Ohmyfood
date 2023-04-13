@@ -8,17 +8,9 @@
     font-style: normal;
     color: $color-black;
 }
-@mixin button-gradient($color1, $color2) {
-    background: linear-gradient($color1, $color2);
-}
-@mixin ligthenedgradient($color1, $color2) {    
-    $fadedcolor1: lighten($color1, 15%);
-    $fadedcolor2: lighten($color2, 15%);
-    background: linear-gradient($fadedcolor1,$fadedcolor2);
-    
-}
+
 @mixin bubblestyle {
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    @include boxshadow-restaurants-card;
     border-radius: 20px; 
 }
 
@@ -33,7 +25,7 @@
     background-repeat: no-repeat;
 }
 @mixin boxshadow-restaurants-card{
-     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 @mixin card {
     background-color: $color-white; 

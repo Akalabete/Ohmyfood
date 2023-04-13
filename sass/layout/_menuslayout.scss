@@ -21,7 +21,7 @@
 .card {
     position: relative;
     overflow: hidden;
-
+    cursor: pointer;
     .btn-check{
         border: 0;
         position: absolute;
@@ -30,9 +30,9 @@
         background-color: $color-tertiary;
         height: 100%;
         width: 65px;
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 15px 15px 0;
         transition-duration: .55s;
-
+        
         .fa-circle-check
         {
             color: white;        
@@ -41,44 +41,39 @@
     }
 
     &:hover{
-        cursor: pointer;
+        
 
         .btn-check {
             right: 0;        
         }
-        strong {
-            margin-right: 60px;
+        .card__body__price {
+            transform: translateX(-60px);
+            transition-delay: 50ms
         }
     }
 }
 
 
 
-.card
-{
+.card {
     @include card;
-
-    .card-title
-    {
-        
+    &__title {        
         margin-left: 15px;
         margin-top: -8px; 
     }
-
-    .card-body {
+    &__body {
         display: flex;
         justify-content: space-between;
         margin: -29px 20px 0 15px;
-         .para-body {
+         &__description {
             width: 89%;
             overflow: hidden;
             text-overflow: ellipsis;/* apparition des ... en cas de menu trop long*/
             white-space: nowrap; /* empeche le retour à la ligne */            
         }
-        strong {
+        &__price {
             transition-duration: 0.60s;
-        }
-    
+        }    
     }
 }
 .menu__selection__container {
