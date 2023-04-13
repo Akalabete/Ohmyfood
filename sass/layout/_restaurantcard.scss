@@ -31,3 +31,16 @@
         }
     }
 }
+.restaurants__container{
+    display: flex;
+   
+}
+.favourite {
+    width: 20px;
+    margin: auto 20px auto auto;
+    pointer-events: none;
+}
+
+.fa-heart:hover {
+    border: none;
+}
