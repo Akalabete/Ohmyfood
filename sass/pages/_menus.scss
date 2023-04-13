@@ -1,6 +1,7 @@
 [class^="menu__photo"] {
     @include restaurant-photos;
     width: 100%;
+    
 }
  
 [class$="__alafrancaise"]{
@@ -11,6 +12,7 @@
 }
 [class$="__lapalettedugout"]{
     background-image: url("../../public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    display: block;
 }
 [class$="__ledelicedessens"]{
     background-image: url("../../public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");

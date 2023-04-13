@@ -1,7 +1,8 @@
 //hooker 
 .main__hooker{
     text-align: center;
-    background: $color-bg-lightbrown; 
+    background: $color-bg-lightbrown;
+    padding-bottom: 1px; 
     &__localisation {
         width: 100%;
         height: 100%;
@@ -24,7 +25,7 @@
          height: 72px;
          width: 90%;
          margin: 0 0 25px 10px;
-         padding: 0 ;
+         padding: 0;
          display: flex;
          flex-direction: row;
          justify-content: center;
