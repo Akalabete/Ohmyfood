@@ -34,8 +34,10 @@
 
 
 // coeur qui se remplit au hover
-
-.conteneur {
+.restaurants__container{
+  justify-content: space-between;
+}
+.conteneur, .favourite-container {
   position: relative;
   width: 100px;
   height: 100px;
@@ -43,8 +45,8 @@
 
 .empty-heart, .full-heart{
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  right: 20px;
 }
 
 .empty-heart {

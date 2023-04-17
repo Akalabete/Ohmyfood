@@ -79,3 +79,10 @@
 .menu__selection__container {
     padding-bottom: 1px; // sinon bouton collé en bas ??
 }
+.menu-title {
+    display: flex;
+    flex-direction: row;
+}
+.menu-title .favourite-container i {
+    top: 30px;
+}

@@ -140,7 +140,11 @@ h4 {
   animation-delay: 3s;
 }
 
-.conteneur {
+.restaurants__container {
+  justify-content: space-between;
+}
+
+.conteneur, .favourite-container {
   position: relative;
   width: 100px;
   height: 100px;
@@ -148,8 +152,8 @@ h4 {
 
 .empty-heart, .full-heart {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  right: 20px;
 }
 
 .empty-heart {
@@ -282,6 +286,15 @@ h4 {
 
 .menu__selection__container {
   padding-bottom: 1px;
+}
+
+.menu-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-title .favourite-container i {
+  top: 30px;
 }
 
 .footer {
