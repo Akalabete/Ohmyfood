@@ -10,7 +10,8 @@
     margin: 40px auto;
     font-size: 18px;
     box-shadow: 0.25rem 0.25rem 10px rgb(0, 0, 0, 0.25);
-    cursor: pointer;    
+    cursor: pointer;  
+    transition-duration: 0.5s;  
     &:hover {
         background: linear-gradient(to right bottom, lighten($color-secondary, 5), lighten($color-primary, 5));
         box-shadow: 0.25rem 0.25rem 10px rgb(0, 0, 0, 0.5);

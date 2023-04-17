@@ -11,8 +11,10 @@ body {
 }
 
 .main p {
-  margin-block-start: 0;
-  margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 .main__howto__bubble__text p {
@@ -142,41 +144,40 @@ h4 {
 
 .conteneur {
   position: relative;
-  width: 100px;
-  height: 100px;
 }
 
-.empty-heart, .full-heart {
+.premiere-div {
   position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.empty-heart {
-  color: black;
-  background: none;
-  font-size: 2em;
-  z-index: 1;
-  opacity: 1;
-  transition: opacity 500ms;
-}
-
-.empty-heart:hover {
-  opacity: 0;
-}
-
-.full-heart {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #00ffff 0%, #00bfff 100%);
   z-index: 2;
-  opacity: 0;
-  font-size: 2em;
   transition: opacity 500ms;
 }
 
-.full-heart:hover {
+.premiere-div:hover {
+  opacity: 0;
+}
+
+.deuxieme-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background: transparent;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 500ms, border 500ms;
+}
+
+.premiere-div:hover + .deuxieme-div {
   opacity: 1;
+  border: 5px solid black;
 }
 
 .mainpage-restaurants-links, .backto {
@@ -423,6 +424,4 @@ h4 {
 .main__howto__bubble__innericon {
   position: absolute;
   left: 23px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
