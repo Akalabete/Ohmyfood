@@ -86,3 +86,19 @@
 .menu-title .favourite-container i {
     top: 30px;
 }
+.main__restaurants__card{
+    position: relative;
+}
+.isnew {
+    position: absolute;
+    text-align: center;
+    line-height:30px;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 80px;
+    background-color: $color-tertiary;
+    color:#008766;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+}
