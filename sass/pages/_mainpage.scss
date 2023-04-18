@@ -17,7 +17,17 @@
 .main__howto {
     display: block;
     padding:0 2%;
+    &__container {
+        @media screen and (min-width: 1096px){
+            display: flex;
+            justify-content: space-between;            
+        }
+    }
      &__bubble {
+        @media screen and (min-width: 1096px){
+            width: 32%;
+            margin: 0;            
+        }
          position: relative;
          border: none;
          background: $color-white;
@@ -47,6 +57,5 @@
          }
      }
  }
-
 
 

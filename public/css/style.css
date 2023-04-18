@@ -2,6 +2,7 @@
 body {
   background: #ffffff;
   width: 100%;
+  min-width: 320px;
   margin: 0;
 }
 
@@ -140,22 +141,6 @@ h4 {
   animation-delay: 3s;
 }
 
-.restaurants__container {
-  justify-content: space-between;
-}
-
-.conteneur, .favourite-container {
-  position: relative;
-  width: 100px;
-  height: 100px;
-}
-
-.empty-heart, .full-heart {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
 .empty-heart {
   color: black;
   background: none;
@@ -172,6 +157,7 @@ h4 {
 .full-heart {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 2;
   opacity: 0;
@@ -183,6 +169,98 @@ h4 {
   opacity: 1;
 }
 
+.loader {
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  z-index: 999;
+  animation-name: loader-animation;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader-animation {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+[class^=loader__image] {
+  height: 120px;
+  width: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: ellipse(50% 50%);
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  [class^=loader__image] {
+    height: 180px;
+    width: 180px;
+  }
+}
+@media (min-width: 1096px) {
+  [class^=loader__image] {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.loader__image__alafrancaise {
+  position: absolute;
+  right: 20%;
+  top: 5%;
+  animation: fade-in 0.5s ease-in-out 0s forwards;
+}
+
+.loader__image__ledelicedessens {
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  animation: fade-in 1s ease-in-out 0.5s forwards;
+}
+
+.loader__image__lanoteenchantee {
+  position: absolute;
+  right: 20%;
+  top: 45%;
+  animation: fade-in 1.5s ease-in-out 1s forwards;
+}
+
+.loader__image__lapalettedugout {
+  position: absolute;
+  left: 20%;
+  top: 65%;
+  animation: fade-in 2s ease-in-out 1.5s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .mainpage-restaurants-links, .backto {
   text-decoration: none;
   color: black;
@@ -334,6 +412,26 @@ h4 {
   padding: 10px 0 0 40px;
 }
 
+@media screen and (min-width: 1096px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    vertical-align: baseline;
+  }
+  .footer__title {
+    display: inline;
+    margin-right: 10px;
+    vertical-align: baseline;
+  }
+  .footer__list {
+    display: flex;
+    margin: 0;
+  }
+  .footer__list li {
+    margin-right: 0.8rem;
+  }
+}
 .main__restaurants__card h3 {
   margin-top: 10px;
   margin-bottom: 5px;
@@ -347,10 +445,24 @@ h4 {
   padding-bottom: 10px;
 }
 
+.bglightbrown {
+  background: #F7F7F7;
+}
+
+.main__restaurants__title {
+  padding: 10px 2%;
+}
+
 .main__restaurants {
   padding: 0 2%;
-  background: #F7F7F7;
   width: 96%;
+}
+@media screen and (min-width: 1096px) {
+  .main__restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .main__restaurants__card {
   display: block;
@@ -360,6 +472,12 @@ h4 {
   margin-bottom: 18px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 1096px) {
+  .main__restaurants__card {
+    width: 500px;
+    margin-bottom: 50px;
+  }
 }
 .main__restaurants__card > [class^=main__restaurants__card__] {
   border-radius: 15px 15px 0 0;
@@ -372,6 +490,7 @@ h4 {
 
 .restaurants__container {
   display: flex;
+  justify-content: space-between;
 }
 
 .favourite {
@@ -380,8 +499,16 @@ h4 {
   pointer-events: none;
 }
 
-.fa-heart:hover {
-  border: none;
+.conteneur, .favourite-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.empty-heart, .full-heart {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 [class^=menu__photo] {
@@ -425,6 +552,12 @@ h4 {
   display: block;
   padding: 0 2%;
 }
+@media screen and (min-width: 1096px) {
+  .main__howto__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .main__howto__bubble {
   position: relative;
   border: none;
@@ -439,6 +572,12 @@ h4 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1096px) {
+  .main__howto__bubble {
+    width: 32%;
+    margin: 0;
+  }
 }
 .main__howto__bubble__icon {
   width: 20px;

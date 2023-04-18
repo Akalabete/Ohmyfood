@@ -16,3 +16,31 @@
         padding: 10px 0 0 40px;
     }
 }
+
+@media screen and (min-width: 1096px) {
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        vertical-align: baseline;
+      
+      
+    }
+    
+    .footer__title {
+        display: inline;
+        margin-right: 10px;
+        vertical-align: baseline;
+      
+    }
+    
+    .footer__list {
+        display: flex;
+        margin: 0;
+    }
+    
+    .footer__list li {
+        margin-right: 0.8rem;
+    }
+  
+}

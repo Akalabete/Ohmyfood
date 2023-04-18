@@ -34,20 +34,7 @@
 
 
 // coeur qui se remplit au hover
-.restaurants__container{
-  justify-content: space-between;
-}
-.conteneur, .favourite-container {
-  position: relative;
-  width: 100px;
-  height: 100px;
-}
 
-.empty-heart, .full-heart{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
 
 .empty-heart {
   color: black;
@@ -65,6 +52,7 @@
 .full-heart {        
       background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       z-index: 2;
       opacity: 0;
@@ -73,4 +61,94 @@
 }
 .full-heart:hover{
   opacity: 1;
+}
+
+
+// loader 
+
+.loader {
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  z-index: 999;
+  animation-name: loader-animation;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;   
+}
+@keyframes loader-animation {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+[class^="loader__image"] { 
+  height: 120px;
+  width: 120px;
+  background-size: cover;
+  background-repeat:no-repeat;  
+  clip-path: ellipse(50% 50%);
+  opacity: 0;
+  @media (min-width: 768px) {
+    height: 180px;
+    width: 180px;
+  }
+  @media (min-width: 1096px) {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.loader__image__alafrancaise {
+  position: absolute;
+  right: 20%;
+  top: 5%;
+  animation: fade-in 0.5s ease-in-out 0s forwards; 
+}
+.loader__image__ledelicedessens{
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  animation: fade-in 1s ease-in-out 0.5s forwards; 
+}
+.loader__image__lanoteenchantee{
+  position: absolute;
+  right: 20%;
+  top: 45%;
+  animation: fade-in 1.5s ease-in-out 1s forwards; 
+}
+.loader__image__lapalettedugout  {
+  position: absolute;
+  left: 20%;
+  top: 65%;
+  animation: fade-in 2s ease-in-out 1.5s forwards; 
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
