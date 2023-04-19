@@ -26,12 +26,20 @@
             </div>
         </div>        
     </header>
-    <main class="menu__photo__lapalettedugout"> 
+    <main>
+        <div class="menu__photo__lapalettedugout"> </div>
         <section class="menu__selection">
-            <div class="menu__selection__container">
-        
+            <div class="menu__selection__container">        
                 <div class="menu__selection__entries">
-                    <h2 class="menu__title">La palette du goût</h2>
+                    <div class="menu-title">
+                        <h2 class="menu__title">La palette du goût</h2>
+                        <div class="favourite-container">
+                            <div class="favourite-heart">
+                            <div><i class="fa-regular empty-heart fa-heart"></i></div>
+                            <div><i class="fa full-heart fa-heart"></i></div>
+                        </div>
+                    </div>
+                </div>
                     <h3 class="menu__selection__title">entrées</h3>
                     <article class="animation__card__entries">
                         <div class="card">
@@ -149,12 +157,13 @@
                             </div>
                         </div>
                     </article>
-                </div>            
-                <button 
-                    class="pnk-button"
-                    type="submit"
-                    >Commander</button>
-                </form>
+                </div> 
+                <div>           
+                    <button 
+                        class="pnk-button"
+                        type="submit"
+                        >Commander</button>
+                </div>               
             </div>
         </section>
     </main>

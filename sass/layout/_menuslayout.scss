@@ -18,70 +18,19 @@
 
 
 
-.card {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    .btn-check{
-        border: 0;
-        position: absolute;
-        top: 0px;
-        right: -100px;
-        background-color: $color-tertiary;
-        height: 100%;
-        width: 65px;
-        border-radius: 0 15px 15px 0;
-        transition-duration: .55s;
-        
-        .fa-circle-check
-        {
-            color: white;        
-            transition-duration: .60s;
-        }
-    }
 
-    &:hover{
-        
-
-        .btn-check {
-            right: 0;        
-        }
-        .card__body__price {
-            transform: translateX(-60px);
-            transition-delay: 50ms
-        }
-    }
-}
-
-
-
-.card {
-    @include card;
-    &__title {        
-        margin-left: 15px;
-        margin-top: -8px; 
-    }
-    &__body {
-        display: flex;
-        justify-content: space-between;
-        margin: -29px 20px 0 15px;
-         &__description {
-            width: 89%;
-            overflow: hidden;
-            text-overflow: ellipsis;/* apparition des ... en cas de menu trop long*/
-            white-space: nowrap; /* empeche le retour à la ligne */            
-        }
-        &__price {
-            transition-duration: 0.60s;
-        }    
-    }
-}
 .menu__selection__container {
     padding-bottom: 1px; // sinon bouton collé en bas ??
+    max-width: 1220px;
+    margin: 50px auto auto auto;
 }
 .menu-title {
     display: flex;
     flex-direction: row;
+    @media screen and (min-width: 992px){
+        text-align: center;
+        justify-content: center;
+    }
 }
 .menu-title .favourite-container i {
     top: 30px;
@@ -90,4 +39,9 @@
     position: relative;
 }
 
-
+@media screen and (min-width: 992px) {
+.menu__selection__container >* {
+    max-width: 50%;
+    margin: auto;
+}
+}

@@ -217,7 +217,7 @@ h4 {
     width: 180px;
   }
 }
-@media (min-width: 1096px) {
+@media (min-width: 992px) {
   [class^=loader__image] {
     height: 250px;
     width: 250px;
@@ -262,53 +262,6 @@ h4 {
     transform: translateY(0);
   }
 }
-.mainpage-restaurants-links, .backto {
-  text-decoration: none;
-  color: black;
-}
-
-.menu__header__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  position: relative;
-}
-.menu__header__container__backto {
-  position: absolute;
-  left: 0;
-  font-size: 24px;
-  transform: translateX(50%);
-  padding-left: 1%;
-}
-.menu__header__container__logo {
-  max-width: 200px;
-  width: 50%;
-  max-height: 44px;
-}
-.menu__header__container__logo img {
-  width: 100%;
-  max-height: 44px;
-  height: 50%;
-}
-
-.menu__selection {
-  padding-top: 150px;
-}
-.menu__selection > * {
-  background: #F7F7F7;
-  border-radius: 40px 40px 0 0;
-}
-
-.menu__title {
-  margin: 0 0 24px 15px;
-  padding-top: 25px;
-}
-
-.menu__selection__title {
-  margin: 18px 0 18px 5px;
-}
-
 .card {
   position: relative;
   overflow: hidden;
@@ -363,13 +316,98 @@ h4 {
   transition-duration: 0.6s;
 }
 
+.mainpage-restaurants-links, .backto {
+  text-decoration: none;
+  color: black;
+}
+
+[class^=menu__photo] {
+  background-color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  height: 240px;
+  width: 100%;
+}
+
+[class$=__alafrancaise] {
+  background-image: url("../../public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-position: 0 70%;
+}
+
+[class$=__lanoteenchantee] {
+  background-image: url("../../public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-position: 0 60%;
+}
+
+[class$=__lapalettedugout] {
+  background-image: url("../../public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-position: 0 60%;
+}
+
+[class$=__ledelicedessens] {
+  background-image: url("../../public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-position: 0 70%;
+}
+
+.menu__header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+.menu__header__container__backto {
+  position: absolute;
+  left: 0;
+  font-size: 24px;
+  transform: translateX(50%);
+  padding-left: 1%;
+}
+.menu__header__container__logo {
+  max-width: 200px;
+  width: 50%;
+  max-height: 44px;
+}
+.menu__header__container__logo img {
+  width: 100%;
+  max-height: 44px;
+  height: 50%;
+}
+
+.menu__selection {
+  padding-top: 150px;
+}
+.menu__selection > * {
+  background: #F7F7F7;
+  border-radius: 40px 40px 0 0;
+}
+
+.menu__title {
+  margin: 0 0 24px 15px;
+  padding-top: 25px;
+}
+
+.menu__selection__title {
+  margin: 18px 0 18px 5px;
+}
+
 .menu__selection__container {
   padding-bottom: 1px;
+  max-width: 1220px;
+  margin: 50px auto auto auto;
 }
 
 .menu-title {
   display: flex;
   flex-direction: row;
+}
+@media screen and (min-width: 992px) {
+  .menu-title {
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .menu-title .favourite-container i {
@@ -380,6 +418,12 @@ h4 {
   position: relative;
 }
 
+@media screen and (min-width: 992px) {
+  .menu__selection__container > * {
+    max-width: 50%;
+    margin: auto;
+  }
+}
 .footer {
   background-color: #353535;
   color: #ffffff;
@@ -444,7 +488,7 @@ h4 {
   padding: 0 2%;
   width: 96%;
 }
-@media screen and (min-width: 1096px) {
+@media screen and (min-width: 992px) {
   .main__restaurants {
     display: flex;
     flex-wrap: wrap;
@@ -452,17 +496,18 @@ h4 {
   }
 }
 .main__restaurants__card {
+  max-width: 500px;
   display: block;
   background: #ffffff;
   width: 100%;
   height: 220px;
-  margin-bottom: 18px;
+  margin: auto auto 18px auto;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-@media screen and (min-width: 1096px) {
+@media screen and (min-width: 992px) {
   .main__restaurants__card {
-    width: 500px;
+    width: 470px;
     margin-bottom: 50px;
   }
 }
@@ -512,30 +557,6 @@ h4 {
   border-radius: 2px;
 }
 
-[class^=menu__photo] {
-  background-color: #ffffff;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-
-[class$=__alafrancaise] {
-  background-image: url("../../public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-}
-
-[class$=__lanoteenchantee] {
-  background-image: url("../../public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-}
-
-[class$=__lapalettedugout] {
-  background-image: url("../../public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  display: block;
-}
-
-[class$=__ledelicedessens] {
-  background-image: url("../../public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-}
-
 .main__hooker {
   text-align: center;
   background: #F7F7F7;
@@ -553,11 +574,11 @@ h4 {
   display: block;
   padding: 0 2%;
 }
-@media screen and (min-width: 1096px) {
+@media screen and (min-width: 992px) {
   .main__howto__container {
     display: flex;
     justify-content: space-between;
-    padding-right: 30px;
+    padding: 0 30px;
   }
 }
 .main__howto__bubble {
@@ -568,17 +589,23 @@ h4 {
   border-radius: 20px;
   height: 72px;
   width: 90%;
-  margin: 0 0 25px 10px;
-  padding: 0;
+  max-width: 500px;
+  margin: auto auto 25px auto;
+  padding: 0 0 0 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1096px) {
+@media screen and (min-width: 992px) {
   .main__howto__bubble {
     width: 30%;
     margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__howto__bubble {
+    margin: auto auto 25px auto;
   }
 }
 .main__howto__bubble__icon {
@@ -597,10 +624,21 @@ h4 {
   left: 23px;
 }
 
-@media screen and (min-width: 1096px) {
-  section {
+@media screen and (min-width: 992px) {
+  .main__restaurants__container, .main__howto {
     max-width: 1096px;
     margin: 0 auto;
+  }
+  .main__howto h3 {
+    padding-left: 2%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .seizure {
+    display: block;
+  }
+  .seizure br {
+    display: none;
   }
 }
 

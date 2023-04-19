@@ -16,7 +16,7 @@
 
 @mixin restaurant-photos {
     background-color: $color-white;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 @mixin main-restaurant-photos {
