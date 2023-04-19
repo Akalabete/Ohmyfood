@@ -20,12 +20,13 @@
     &__container {
         @media screen and (min-width: 1096px){
             display: flex;
-            justify-content: space-between;            
+            justify-content: space-between;
+            padding-right: 30px            
         }
     }
      &__bubble {
         @media screen and (min-width: 1096px){
-            width: 32%;
+            width: 30%;
             margin: 0;            
         }
          position: relative;
@@ -59,3 +60,9 @@
  }
 
 
+ @media screen and (min-width: 1096px){
+    section {
+        max-width: 1096px;
+        margin: 0 auto;
+    }
+}
