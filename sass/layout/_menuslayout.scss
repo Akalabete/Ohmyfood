@@ -43,5 +43,15 @@
 .menu__selection__container >* {
     max-width: 50%;
     margin: auto;
+    }
 }
+
+
+// petite barre en dessous des rubriques des menus
+
+.barre { 
+    width:40px;
+    margin: -13px 0 0 5px;
+
+    border: solid 2px $color-tertiary;
 }

@@ -1,46 +1,59 @@
 .footer {
     background-color: $color-footer;
     color: $color-white;
-    &__list {
-        list-style-type: none;
-        line-height: 24px;
-        padding-bottom: 20px;
-        &__icons {
-            width: 15px;
-            height: 15px;
-            margin-right: 5px;
-        }
+    @media screen and (min-width: 1096px){
+        height: 100px;
+        position: relative;
     }
     &__title {
         color: white;
-        padding: 10px 0 0 40px;
+        letter-spacing: 0.1em;
+        padding: 10px 0 15px 40px;
+        @media screen and (min-width: 1096px) {
+            margin: -5px 0 12px 0;
+            padding: 0 0 0 40px;
+        }
+    }
+    &__container {
+        @media screen and (min-width: 1096px) {
+            display: flex;
+            flex-direction: row-reverse;
+            position: absolute;
+            bottom: 10px;
+            right: 4%;            
+            padding: 0;
+            
+        }
+    }
+    &__elements {
+        padding-bottom: 20px;
+        @media screen and (min-width: 1096px) {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+        }
+    > *{
+        padding: 0 0 0 40px;
+        @media screen and (min-width: 1096px) {
+            display: flex;
+            flex-direction: row;
+            padding: 0 10px 0 10px;
+        }
+        > a {
+            cursor: pointer;
+            > p {
+                margin-bottom: 12px;
+                @media screen and (min-width: 1096px) {
+                    padding-right: 10px;
+                }
+                > i {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                    }        
+                } 
+            }          
+        }
     }
 }
 
-@media screen and (min-width: 1096px) {
-    .footer {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        vertical-align: baseline;
-      
-      
-    }
-    
-    .footer__title {
-        display: inline;
-        margin-right: 10px;
-        vertical-align: baseline;
-      
-    }
-    
-    .footer__list {
-        display: flex;
-        margin: 0;
-    }
-    
-    .footer__list li {
-        margin-right: 0.8rem;
-    }
-  
-}

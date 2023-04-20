@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/15c7396bf2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,
-    100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=
-    Shrikhand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/style.css">
     <title>Menu - À la française</title>
 </head>
@@ -18,7 +16,7 @@
         <div class="menu__header__container">
             <div class="menu__header__container__backto">
                 <a href="../../../index.html" class="backto">
-                    <i class="fa-solid fa-arrow-left"alt="flèche indiquant un retour à la page d'accueil"></i>
+                    <i class="fa-solid fa-arrow-left"></i>
                 </a> 
             </div>
             <div class="menu__header__container__logo">
@@ -41,6 +39,7 @@
                     </div>
                 </div>
                 <h3 class="menu__selection__title">entrées</h3>
+                <div class="barre"></div>
                 <article class="animation__card__entries">
                     <div class="card">
                         <div class="card__title">
@@ -80,6 +79,7 @@
                 </div>                    
                 <div class="menu__selection__main-courses">
                     <h3 class="menu__selection__title">plats</h3>
+                    <div class="barre"></div>
                     <article class="animation__card__main-courses">
                         <div class="card">
                             <div class="card__title">
@@ -119,6 +119,7 @@
                 </div>
                 <div class="menu__selection__desserts">
                     <h3 class="menu__selection__title">desserts</h3>
+                    <div class="barre"></div>
                     <article class="animation__card__desserts">
                         <div class="card">
                             <div class="card__title">
@@ -166,14 +167,20 @@
         </section>
     </main>
     <footer class="footer">
-        <h3 class="footer__title">ohmyfood</h3>
-        <ul class="footer__list">
-            <li><i class="footer__list__icons fa-solid fa-utensils fa-sm"></i>Proposer un restaurant</li>
-            <li><i class="footer__list__icons fa-solid fa-handshake-angle fa-sm"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
-        </ul>
-    </footer>
+        <div class="footer__container">
+          <h3 class="footer__title">ohmyfood</h3>
+          <div class="footer__elements">  
+            <div class="footer__elements__one">
+              <a><p><i class="footer__list__icons fa-solid fa-utensils fa-sm"></i>Proposer un restaurant</p></a>
+              <a><p><i class="footer__list__icons fa-solid fa-handshake-angle fa-sm"></i>Devenir partenaire</p></a>
+            </div>
+            <div class="footer__elements__two">
+              <a><p>Mentions légales</p></a>
+              <a><p>Contact</p></a>
+            </div>
+          </div>        
+        </div>
+      </footer>
     
 </body>
 </html>

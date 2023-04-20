@@ -28,11 +28,11 @@ h1 {
     line-height: 28px;
  }
 h2 {
-    font-family: 'Shrikhand';
-    font-style: italic;    
+    font-family: 'Shrikhand';        
     font-size: 28px;
     line-height: 41px;
     color: $color-black;
+    letter-spacing: 0.03em
 }
 
 .main__hooker__infos p {
@@ -57,4 +57,22 @@ h4 {
 
 .card__body__price {
     font-weight: bolder;
+}
+.footer__title {
+    font-family: $shrikhand;
+    
+}
+.footer__elements__two a > p {
+    font-family: $roboto;
+    font-weight: 400;
+}
+.footer__elements__one a > p {
+    font-family: $roboto;
+    font-weight: 500;
+}
+
+.menu__selection__title {
+    font-family: $roboto;
+    font-weight: 300;
+    text-transform : uppercase;
 }

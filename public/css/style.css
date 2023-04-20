@@ -42,10 +42,10 @@ h1 {
 
 h2 {
   font-family: "Shrikhand";
-  font-style: italic;
   font-size: 28px;
   line-height: 41px;
   color: black;
+  letter-spacing: 0.03em;
 }
 
 .main__hooker__infos p {
@@ -76,6 +76,26 @@ h4 {
 
 .card__body__price {
   font-weight: bolder;
+}
+
+.footer__title {
+  font-family: "Shrikhand", cursive;
+}
+
+.footer__elements__two a > p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.footer__elements__one a > p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.menu__selection__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .pnk-button {
@@ -424,45 +444,80 @@ h4 {
     margin: auto;
   }
 }
+.barre {
+  width: 40px;
+  margin: -13px 0 0 5px;
+  border: solid 2px #99E2D0;
+}
+
 .footer {
   background-color: #353535;
   color: #ffffff;
 }
-.footer__list {
-  list-style-type: none;
-  line-height: 24px;
+@media screen and (min-width: 1096px) {
+  .footer {
+    height: 100px;
+    position: relative;
+  }
+}
+.footer__title {
+  color: white;
+  letter-spacing: 0.1em;
+  padding: 10px 0 15px 40px;
+}
+@media screen and (min-width: 1096px) {
+  .footer__title {
+    margin: -5px 0 12px 0;
+    padding: 0 0 0 40px;
+  }
+}
+@media screen and (min-width: 1096px) {
+  .footer__container {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    bottom: 10px;
+    right: 4%;
+    padding: 0;
+  }
+}
+.footer__elements {
   padding-bottom: 20px;
 }
-.footer__list__icons {
+@media screen and (min-width: 1096px) {
+  .footer__elements {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+}
+.footer__elements > * {
+  padding: 0 0 0 40px;
+}
+@media screen and (min-width: 1096px) {
+  .footer__elements > * {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px 0 10px;
+  }
+}
+.footer__elements > * > a {
+  cursor: pointer;
+}
+.footer__elements > * > a > p {
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1096px) {
+  .footer__elements > * > a > p {
+    padding-right: 10px;
+  }
+}
+.footer__elements > * > a > p > i {
   width: 15px;
   height: 15px;
   margin-right: 5px;
 }
-.footer__title {
-  color: white;
-  padding: 10px 0 0 40px;
-}
 
-@media screen and (min-width: 1096px) {
-  .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    vertical-align: baseline;
-  }
-  .footer__title {
-    display: inline;
-    margin-right: 10px;
-    vertical-align: baseline;
-  }
-  .footer__list {
-    display: flex;
-    margin: 0;
-  }
-  .footer__list li {
-    margin-right: 0.8rem;
-  }
-}
 .main__restaurants__card h3 {
   margin-top: 10px;
   margin-bottom: 5px;
