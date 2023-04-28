@@ -4,7 +4,7 @@
   "description": "pre commandez votre menu dans vos restaurants favoris",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./ressources/css/style.css"
   },
   "repository": {
     "type": "git",
