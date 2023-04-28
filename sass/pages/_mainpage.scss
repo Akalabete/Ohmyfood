@@ -18,14 +18,14 @@
     display: block;
     padding:0 2%;
     &__container {
-        @media screen and (min-width: 992px){
+        @media screen and (min-width: 1024px){
             display: flex;
             justify-content: space-between;
             padding: 0 30px;            
         }
     }
      &__bubble {
-        @media screen and (min-width: 992px){
+        @media screen and (min-width: 1024px){
             width: 30%;
             margin: 0;            
         }
@@ -65,9 +65,9 @@
  }
 
 
- @media screen and (min-width: 992px){
+ @media screen and (min-width: 1024px){
     .main__restaurants__container, .main__howto{
-        max-width: 1096px;
+        max-width: 1024px;
         margin: 0 auto;
     }
     .main__howto h3 {

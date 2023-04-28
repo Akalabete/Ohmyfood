@@ -19,13 +19,13 @@
 .main__restaurants{
     padding: 0 2%;
     width: 96%;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 1024px){
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;      
     }
     &__card {
-        @media screen and (min-width: 992px){
+        @media screen and (min-width: 1024px){
           width: 470px;
           margin-bottom: 50px;
                

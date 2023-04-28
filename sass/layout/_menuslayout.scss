@@ -27,7 +27,7 @@
 .menu-title {
     display: flex;
     flex-direction: row;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 1024px){
         text-align: center;
         justify-content: center;
     }
@@ -39,7 +39,7 @@
     position: relative;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
 .menu__selection__container >* {
     max-width: 50%;
     margin: auto;
