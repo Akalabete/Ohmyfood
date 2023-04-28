@@ -14,11 +14,7 @@
     border-radius: 20px; 
 }
 
-@mixin restaurant-photos {
-    background-color: $color-white;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 @mixin main-restaurant-photos {
     background-color: $color-white;
     background-size: cover;

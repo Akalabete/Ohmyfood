@@ -1,5 +1,5 @@
 [class^="menu__photo"] {
-    @include restaurant-photos;
+    @include main-restaurant-photos;
     position: absolute;
     z-index: -1;
     height: 240px;
